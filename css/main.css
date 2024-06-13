@@ -1,0 +1,32 @@
+.header{
+    background-color: #4CB877;
+    height: 80px;
+}
+.plan{
+    font-size: 12px;
+    color: #fff;
+}
+.ras_doh{
+    border-end-end-radius: 30px;
+    border-end-start-radius: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #EBFFF3;
+    padding-bottom: 15px;
+}
+.chet{
+    font-size: 16px;
+}
+.money_acc{
+    font-size: 24px;
+}
+a.type{
+    color: black !important;
+    text-decoration: none !important;
+}
+a.type:hover{
+    color: #4CB877 !important;
+}
+.fr{
+    height: 70vh !important;
+}
