@@ -1,0 +1,165 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'android/css/plan.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Планирование расходов</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header d-flex align-items-center ps-2 row">
+            <div class="btn_back col-2">
+                <button class="btn" onclick="location.href='{% url 'main' %}'"><img src="{% static 'android/img/back.png' %}"></button>
+            </div>
+            <div class="title col">
+                <label>Планирование расходов</label>
+            </div>
+        </div>
+        <div class="label_sum d-flex justify-content-center pt-4">
+            <label>Введите сумму вашего бюджета</label>
+        </div>
+        <div class="sum d-flex justify-content-center">
+            <input class="add_price" placeholder="0" maxlength="7" type="text"><label>₽</label>
+        </div>
+        <div class="d-flex justify-content-center pt-2">
+            <div class="line_one"></div>
+        </div>
+        <div class="money_label d-flex justify-content-center pt-2">
+            <label>Свободные деньги</label>
+        </div>
+        <div class="money d-flex justify-content-center">
+            <label>0 ₽</label>
+        </div>
+        <div class="select d-flex justify-content-center pt-3">
+            <label>Выберите категории трат</label>
+        </div>
+        <div class="row row-cols-4 p-3">
+            <form class="sircle col" method="post">
+                {% csrf_token %}
+                <div class="button d-flex justify-content-center">
+                    <button class="btn p-0" name="zdorovie" type="submit"><img src="{% static 'android/img/zdor.png' %}"></button>
+                </div>
+                <div class="title_kateg d-flex justify-content-center">
+                    <label>Здоровье</label>
+                </div>
+                <div class="price_kateg d-flex justify-content-center">
+                    <label>0 ₽</label>
+                </div>
+            </form>
+            <form class="sircle col" method="post">
+                {% csrf_token %}
+                <div class="button d-flex justify-content-center">
+                    <button class="btn p-0" name="home" type="submit"><img src="{% static 'android/img/home.png' %}"></button>
+                </div>
+                <div class="title_kateg d-flex justify-content-center">
+                    <label>Дом</label>
+                </div>
+                <div class="price_kateg d-flex justify-content-center">
+                    <label>0 ₽</label>
+                </div>
+            </form>
+            <form class="sircle col" method="post">
+                {% csrf_token %}
+                <div class="button d-flex justify-content-center">
+                    <button class="btn p-0" name="cafe" type="submit"><img src="{% static 'android/img/cafe.png' %}"></button>
+                </div>
+                <div class="title_kateg d-flex justify-content-center">
+                    <label>Кафе</label>
+                </div>
+                <div class="price_kateg d-flex justify-content-center">
+                    <label>0 ₽</label>
+                </div>
+            </form>
+            <form class="sircle col" method="post">
+                {% csrf_token %}
+                <div class="button d-flex justify-content-center">
+                    <button class="btn p-0" name="dosug" type="submit"><img src="{% static 'android/img/dosug.png' %}"></button>
+                </div>
+                <div class="title_kateg d-flex justify-content-center">
+                    <label>Досуг</label>
+                </div>
+                <div class="price_kateg d-flex justify-content-center">
+                    <label>0 ₽</label>
+                </div>
+            </form>
+            <form class="sircle col" method="post">
+                {% csrf_token %}
+                <div class="button d-flex justify-content-center">
+                    <button class="btn p-0" name="obraz" type="submit"><img src="{% static 'android/img/obraz.png' %}"></button>
+                </div>
+                <div class="title_kateg d-flex justify-content-center">
+                    <label>Образование</label>
+                </div>
+                <div class="price_kateg d-flex justify-content-center">
+                    <label>0 ₽</label>
+                </div>
+            </form>
+            <form class="sircle col" method="post">
+                {% csrf_token %}
+                <div class="button d-flex justify-content-center">
+                    <button class="btn p-0" name="podar" type="submit"><img src="{% static 'android/img/podar.png' %}"></button>
+                </div>
+                <div class="title_kateg d-flex justify-content-center">
+                    <label>Подарки</label>
+                </div>
+                <div class="price_kateg d-flex justify-content-center">
+                    <label>0 ₽</label>
+                </div>
+            </form>
+            <form class="sircle col" method="post">
+                {% csrf_token %}
+                <div class="button d-flex justify-content-center">
+                    <button class="btn p-0" name="product" type="submit"><img src="{% static 'android/img/product.png' %}"></button>
+                </div>
+                <div class="title_kateg d-flex justify-content-center">
+                    <label>Продукты</label>
+                </div>
+                <div class="price_kateg d-flex justify-content-center">
+                    <label>0 ₽</label>
+                </div>
+            </form>
+            <form class="sircle col" method="post">
+                {% csrf_token %}
+                <div class="button d-flex justify-content-center">
+                    <button class="btn p-0" name="tochki" type="submit"><img src="{% static 'android/img/tochki.png' %}"></button>
+                </div>
+                <div class="title_kateg d-flex justify-content-center">
+                    <label>Другое</label>
+                </div>
+                <div class="price_kateg d-flex justify-content-center">
+                    <label>0 ₽</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="row pt-3">
+            <div class="img_kr col-4">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'android/img/zdor.png' %}">
+                </div>
+            </div>
+            <div class="col-8 ps-0">
+                <div class="title_price row pt-4">
+                    <div class="title_q col">
+                        <label>Здоровье</label>
+                    </div>
+                    <div class="price col">
+                        <input class="add_price_kateg" placeholder="0" maxlength="7" type="text"><label>₽</label>
+                    </div>
+                </div>
+                <div class="line_2 ps-0"></div>
+            </div>
+        </div>
+        <div class="btn_save pt-4">
+            <button class="button_button">Сохранить</button>
+        </div>
+    </div>
+</body>
+</html>

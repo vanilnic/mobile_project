@@ -1,0 +1,45 @@
+.title{
+    color: #4CB877;
+    font-size: 32px;
+    font-weight: 700;
+}
+.add_acc{
+    color: #4CB877;
+    font-size: 20px;
+    font-weight: 500;
+}
+input:focus{
+    outline: #4CB877;
+}
+.otstup{
+    width: 80%;
+}
+.placeh{
+    font-size: 20px;
+    font-weight: 400;
+}
+.inp_inp{
+    font-size: 24px;
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    border: #4CB877 1px solid;
+    background-color: #EBFFF3;
+}
+.registr{
+    height: 55px;
+    width: 75%;
+    background-color: #4CB877;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+.a_log_in{
+    color: black !important;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+
+}
