@@ -1,0 +1,94 @@
+.header{
+    background-color: #4CB877;
+    height: 80px;
+}
+.title{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    display: flex;
+    justify-content: right;
+    padding-right: 40px !important;
+}
+.label_sum{
+    font-size: 18px;
+    font-weight: 400;
+}
+input.add_price{
+    text-align: right;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: none;
+}
+.sum{
+    font-size: 32px;
+    font-weight: 400;
+}
+.line_one{
+    background-color: #D9D9D9;
+    width: 85%;
+    height: 4px;
+    border-radius: 50px;
+}
+.money_label{
+    font-size: 14px;
+    font-weight: 400;
+}
+.money{
+    font-size: 14px;
+    font-weight: 400;
+}
+.select{
+    font-size: 18px;
+    font-weight: 400;
+}
+.title_kateg{
+    font-size: 12px;
+}
+.price_kateg{
+    font-size: 13px;
+
+}
+.img_kr{
+    padding-right: 0px !important;
+}
+.btn:focus{
+    outline: none;
+}
+.title_q{
+    font-size: 14px;
+    font-weight: 500;
+}
+.price{
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 30px !important;
+}
+input.add_price_kateg{
+    text-align: right;
+    font-weight: 500;
+    width: 85%;
+    border: none;
+    outline: none;
+}
+.btn_save{
+    display: flex;
+    justify-content: right;
+    padding-right: 20px !important;
+}
+.line_2{
+    height: 2px;
+    width: 90%;
+    background-color: #D9D9D9;
+}
+.button_button{
+    height: 40px;
+    width: 40%;
+    border-radius: 30px;
+    border: none;
+    background-color: #69F8A2;
+    font-size: 15px;
+    font-weight: 500;
+}
